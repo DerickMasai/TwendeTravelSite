@@ -1,0 +1,126 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.0.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 21, 2020 at 03:27 PM
+-- Server version: 10.3.16-MariaDB
+-- PHP Version: 7.3.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `twende`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `contact_id` int(11) NOT NULL,
+  `contact_name` varchar(35) NOT NULL,
+  `contact_email` varchar(22) NOT NULL,
+  `contact_number` varchar(13) NOT NULL,
+  `contact_message` varchar(1000) NOT NULL,
+  `contact_timestamp` timestamp NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`contact_id`, `contact_name`, `contact_email`, `contact_number`, `contact_message`, `contact_timestamp`) VALUES
+(1, 'Derick Masai', 'derickmasai@gmail.com', '+254719510503', 'Hello!', '2020-01-21 01:13:41'),
+(2, 'Derick Masai', 'derick@twende.co.ke', '0700123456', 'Hello', '2020-01-21 03:09:08'),
+(3, 'Derick', 'derick@twende.co.ke', '0700123456', 'Hello', '2020-01-21 03:09:54'),
+(4, 'Derick', 'derick@twende.co.ke', '0700123345', 'Hello', '2020-01-21 03:17:23');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `quote`
+--
+
+CREATE TABLE `quote` (
+  `quote_id` int(11) NOT NULL,
+  `quote_text` varchar(255) NOT NULL,
+  `quote_author` varchar(35) NOT NULL,
+  `quote_timestamp` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `quote`
+--
+
+INSERT INTO `quote` (`quote_id`, `quote_text`, `quote_author`, `quote_timestamp`) VALUES
+(1, 'THE WORLD IS A BOOK AND THOSE WHO DO NOT TRAVEL READ ONLY A PAGE.', 'SAINT AUGUSTINE', '2020-01-20 23:33:15'),
+(2, 'NOT ALL THOSE WHO WANDER ARE LOST', 'J.R.R. TOLKIEN', '2020-01-20 23:33:15'),
+(3, 'LIFE IS EITHER A DARING ADVENTURE OR NOTHING AT ALL', 'HELEN KELLER', '2020-01-20 23:42:54'),
+(4, 'TAKE ONLY MEMORIES, LEAVE ONLY FOOTPRINTS', 'CHIEF SEATTLE', '2020-01-20 23:42:54'),
+(5, 'THE REAL VOYAGE OF DISCOVERY CONSISTS NOT IN SEEKING NEW LANDSCAPES, BUT IN HAVING NEW EYES', 'MARCEL PROUST', '2020-01-20 23:42:54'),
+(6, 'TRAVEL MAKES ONE MODEST, YOU SEE WHAT A TINY PLACE YOU OCCUPY IN THE WORLD', 'GUSTAVE FLAUBERT', '2020-01-20 23:42:54'),
+(7, 'LIKE ALL GREAT TRAVELLERS, I HAVE SEEN MORE THAN I REMEMBER AND REMEMBER MORE THAN I HAVE SEEN', 'BENJAMIN DISRAELI', '2020-01-20 23:42:54'),
+(8, 'TRAVELING, IT LEAVES YOU SPEECHLESS, THEN TURNS YOU INTO A STORYTELLER', 'IBN BATTUTA', '2020-01-20 23:42:54'),
+(9, 'IF YOU THINK ADVENTURE IS DANGEROUS, TRY ROUTINE, IT\'S LETHAL', 'PAUL COELHO', '2020-01-20 23:42:54'),
+(10, 'GREAT THINGS NEVER CAME FROM COMFORT ZONES', 'ANONYMOUS', '2020-01-20 23:42:54'),
+(11, 'IF YOU ARE ALWAYS TRYING TO BE NORMAL, YOU WILL NEVER KNOW HOW AMAZING YOU CAN BE', 'MAYA ANGELOU', '2020-01-20 23:42:54'),
+(12, 'STOP WORRYING ABOUT THE POTHOLES IN THE ROAD AND ENJOY THE JOURNEY', 'BABS HOFFMAN', '2020-01-20 23:42:54'),
+(13, 'WHEN WAS THE LAST TIME YOU DID SOMETHING FOR THE FIRST TIME?', 'Anonymous', '2020-01-20 23:42:54'),
+(14, 'CLIMB THE MOUNTAIN SO YOU CAN SEE THE WORLD, NOT SO THE WORLD CAN SEE YOU', 'DAVID MCCULLOUGH', '2020-01-20 23:42:54'),
+(15, 'JOBS FILL YOUR POCKET BUT ADVENTURES FILL YOUR SOUL', 'JAMIE LYN BEATTY', '2020-01-20 23:42:54'),
+(16, 'THE REAL VOYAGE OF DISCOVERY CONSISTS NOT IN SEEKING NEW LANDSCAPES, BUT HAVING NEW EYES', 'MARCEL PROUST', '2020-01-20 23:42:54'),
+(17, 'I WOULD RATHER OWN A LITTLE AND SEE THE WORLD THAN OWN THE WORLD AND SEE A LITTLE OF IT', 'ALEXANDER SATTLER', '2020-01-20 23:42:54'),
+(18, 'IT IS BETTER TO SEE SOMETHING ONCE THAN TO HEAR ABOUT IT A THOUSAND TIMES', 'Anonymous', '2020-01-20 23:42:54'),
+(19, 'TRAVEL IS THE ONLY THING YOU BUY THAT MAKES YOU RICHER', 'Anonymous', '2020-01-20 23:42:54'),
+(20, 'MAN CANNOT DISCOVER NEW OCEANS UNLESS HE HAS THE COURAGE TO LOSE SIGHT OF THE SHORE', 'ANDRE GIDE', '2020-01-20 23:42:54'),
+(21, 'TRAVEL IS GLAMOROUS ONLY IN RETROSPECT', 'PAUL THEROUX', '2020-01-20 23:42:54'),
+(22, 'I WISH I HAD NEVER GONE TRAVELING. SAID NO ONE EVER', 'Anonymous', '2020-01-20 23:42:54');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`contact_id`);
+
+--
+-- Indexes for table `quote`
+--
+ALTER TABLE `quote`
+  ADD PRIMARY KEY (`quote_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `quote`
+--
+ALTER TABLE `quote`
+  MODIFY `quote_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

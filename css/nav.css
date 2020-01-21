@@ -1,0 +1,61 @@
+nav {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    background: var(--white-clr);
+    flex-direction: row;
+    z-index: 10;
+}
+
+.logo {
+    height: 30px;
+    width: 75px;
+    margin: auto 0 auto 5%;
+    background: url(../img/logo.svg) no-repeat center;
+    background-size: contain;
+}
+
+header hr {
+    border: none;
+    border-top: 1px solid var(--white-clr);
+    opacity: 0.1;
+}
+
+nav ul {
+    display: flex;
+    margin: auto 5% auto auto;
+}
+
+nav ul li {
+    margin-right: 28px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.6;
+    margin: 0;
+    display: flex;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+nav a:hover {
+    opacity: 1;
+}
+nav ul li:first-child a {
+    background-image: url(../img/tw_txt.svg);
+}
+nav ul li:nth-child(2) a {
+    background-image: url(../img/fb_txt.svg);
+}
+nav ul li:last-child a {
+    background-image: url(../img/in_txt.svg);
+}

@@ -50,7 +50,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <!-- JS -->
     <script type="application/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="application/javascript" src="js/main_min.js"></script>
+    <script type="application/javascript" src="js/main.min.js"></script>
 
 </head>
 

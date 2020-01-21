@@ -1,0 +1,72 @@
+@font-face {
+  font-family: CoreSansLight;
+  src: url(../fonts/core_sans_cr_light.ttf);
+}
+@font-face {
+  font-family: CoreSansRegular;
+  src: url(../fonts/core_sans_cr_regular.ttf);
+}
+@font-face {
+  font-family: CoreSansBold;
+  src: url(../fonts/core_sans_cr_bold.ttf);
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../fonts/poppins_bold.otf);
+}
+@font-face {
+  font-family: PoppinsSemiBold;
+  src: url(../fonts/poppins_semibold.otf);
+}
+@font-face {
+  font-family: PoppinsLight;
+  src: url(../fonts/poppins_light.otf);
+}
+@font-face {
+  font-family: PoppinsExtraLight;
+  src: url(../fonts/poppins_extralight.otf);
+}
+@font-face {
+  font-family: PoppinsThin;
+  src: url(../fonts/poppins_thin.otf);
+}
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../fonts/poppins_regular.otf);
+}
+@font-face {
+  font-family: Prociono;
+  src: url(../fonts/prociono.otf);
+}
+@font-face {
+  font-family: Parkinson;
+  src: url(../fonts/parkinson.otf);
+}
+@font-face {
+  font-family: BlackAnimal;
+  src: url(../fonts/black_animal.otf);
+}
+@font-face {
+  font-family: Tahu;
+  src: url(../fonts/tahu.ttf);
+}
+@font-face {
+  font-family: Signature;
+  src: url(../fonts/signature.ttf);
+}
+@font-face {
+  font-family: CenturyRegular;
+  src: url(../fonts/GOTHIC.TTF);
+}
+@font-face {
+  font-family: CenturyBold;
+  src: url(../fonts/GOTHICB0.TTF);
+}
+@font-face {
+  font-family: RubikRegular;
+  src: url(../fonts/rubik_regular.ttf);
+}
+@font-face {
+  font-family: RubikMedium;
+  src: url(../fonts/rubik_medium.ttf);
+}

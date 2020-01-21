@@ -1,0 +1,28 @@
+:root {
+    
+/*    Fonts*/
+    --ttl: PoppinsSemiBold;
+    --copy: PoppinsLight;
+    --thin: PoppinsThin;
+    --rndhdg: CoreSansBold;
+    --reg: CoreSansRegular;
+    --txt: CoreSansLight;
+    --pro: Prociono;
+    --cen: CenturyRegular;
+    --rum: RubikMedium;
+    
+/*    Font Declaration*/
+    
+/*    Colors*/
+    --sec-clr: #FF1800;
+    --sec-grad-clr: #FF0074;
+    --txt-clr: #000000;
+    --bg-clr: #F1F1F1;
+    --white-clr: #FFFFFF;
+    
+/*    Dimensions*/
+    --ttl-sz: 48px;
+    --rndhdg-sz: 40px;
+    --txt-sz: 20px;
+    --lbl-sz: 16px;
+}
